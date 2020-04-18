@@ -1,0 +1,277 @@
+@font-face{
+  font-family: IBMPlexSerif;
+  src: url('fonts/IBMPlexSerif-Light.ttf');
+  font-style: normal;
+}
+
+@font-face{
+  font-family: IBMPlexSans;
+  src: url('fonts/IBMPlexSans-Light.ttf');
+  font-style: normal;
+}
+
+body {
+  background-color: #DDDBDA;
+  min-height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  font-family: IBMPlexSerif;
+  
+}
+
+
+  .App {
+    /* text-align: center; */
+    margin-left: 85px;
+    margin-right: 85px;
+    background-color: #F3F1F0;
+    min-height: 100vh;
+  
+    
+  }
+  .Carousel{
+    padding-left: 55px;
+    display: flex;
+  
+    
+  }
+  .App-header {
+  
+    background-color: #F3F1F0;
+    ;
+    min-height: 100px;
+    
+    display: flex; 
+    align-items: center;
+    /* margin: 30px; */
+    padding: 55px;
+    
+  }
+
+
+
+
+
+.wrap{
+  
+  max-width:100%;
+  overflow-x: scroll;
+  
+}
+
+::-webkit-scrollbar { /* chrome based */
+  width: 0px;  /* ширина scrollbar'a */
+  background: transparent;  /* опционально */
+}
+
+
+
+.header_menu{
+  margin-left: auto;
+  display: flex;
+}
+
+.header_menu_active a{
+  color: #333333;
+  margin-left: 20px;
+  padding: 5px 30px;
+  /* border: 1px solid #333333; */
+  /* font-size: 18px; */
+  border-radius: 30px;
+  text-decoration: none;
+  background:white;
+  display: inline-block;
+
+  
+}
+
+.header_menu_inactive a{
+  color: #333333;
+  margin-left: 20px;
+  padding: 5px 30px ;
+  /* border: 1px solid #333333; */
+  /* font-size: 18px; */
+  
+  text-decoration: none;
+  
+  display: inline-block;
+
+  
+}
+.header_menu_inactive a:hover{
+  color: #D0455E;
+  
+}
+
+.header_menu a p{
+  margin: 0px;
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+
+.switcher{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: IBMPlexSans;
+  /* border-bottom: 2px solid #333333; */
+  margin-left: 55px;
+  margin-right: 55px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.switcher_menu_active a{
+  color: #333333;
+  /* margin-left: 20px; */
+  padding: 5px 20px;
+  border: 1px solid #333333;
+  /* font-size: 18px; */
+  border-radius: 30px;
+  text-decoration: none;
+  /* background:white; */
+  display: inline-block;
+
+  
+}
+
+.switcher_menu_inactive a{
+  color: #333333;
+  /* margin-left: 5px; */
+  padding: 5px 30px ;
+  /* border: 1px solid #333333; */
+  /* font-size: 18px; */
+  
+  text-decoration: none;
+  
+  display: inline-block;
+
+  
+}
+
+.switcher a p{
+  margin: 0px;
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+
+.view{
+  margin-left: 55px;
+  margin-right: 55px;
+}
+
+.footer{
+  background-color: white;
+  height: 200px;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 600;
+  display: flex;
+  font-family: IBMPlexSans;
+  padding-top: 40px;
+  margin-top: 100px;
+  color: #DDDBDA;
+}
+
+.newPost{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.mm_header{
+
+  min-height: 50px;
+  
+  display: flex; 
+  align-items: center;
+  /* margin: 30px; */
+  padding: 20px;
+
+}
+
+.mm_close{
+
+margin-left: auto;
+padding-top: 10px;
+
+}
+
+.mm_content{
+  font-family: IBMPlexSerif;
+  font-size: 20px;
+  font-weight: 600;
+}
+.mm_home{
+  margin-left: 20px;
+  margin-right: 20px;
+  border-bottom: 2px solid #333333;
+  border-top:2px solid #333333;
+  height:50px;
+  display: flex;
+  align-items: center;
+}
+
+.mm_newpost{
+  margin-left: 20px;
+  margin-right: 20px;
+  border-bottom: 2px solid #333333;
+  height:50px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  .App {
+    /* text-align: center; */
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: #F3F1F0;
+    min-height: 100vh;
+  
+    
+  }
+  .Carousel{
+    padding-left: 10px;
+    display: flex;
+  
+    
+  }
+  .App-header {
+  
+    background-color: #F3F1F0;
+    ;
+    min-height: 50px;
+    
+    display: flex; 
+    align-items: center;
+    /* margin: 30px; */
+    padding: 20px;
+    
+  }
+  .view{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .view img{
+    width:30px;
+  }
+
+  .switcher{
+
+    margin-left: 10px;
+    margin-right: 10px;
+
+  }
+
+  body h1{
+    font-size: 20px;
+  }
+  body span{
+    font-size: 18px;
+  }
+}
