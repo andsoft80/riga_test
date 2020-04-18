@@ -115,7 +115,7 @@ class App extends React.Component {
         </Drawer>
         <header className="App-header">
           <div >
-            <img src="img/logo.JPG" />
+            <img src="img/logo.jpg" />
           </div>
           {(this.state.screenWidth >= '500')
             ?
